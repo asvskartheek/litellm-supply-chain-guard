@@ -25,6 +25,21 @@ The LiteLLM incident involved malicious releases on PyPI. The advisory recommend
 
 This CLI automates those checks across a folder full of repos.
 
+### Active community issue
+
+The main public tracking issue is:
+
+- [BerriAI/litellm issue #24512](https://github.com/BerriAI/litellm/issues/24512)
+
+Short thread summary:
+
+- the public issue is being used by the community to track the March 24, 2026 PyPI compromise
+- reports in the thread align with the advisory that `1.82.7` and `1.82.8` are the affected versions
+- the discussion references the malicious `.pth` startup behavior, suspicious package publication path, and the need to inspect local environments and caches
+- the thread also reflects confusion/noise around the incident, so responders should rely on concrete local verification steps rather than issue comments alone
+
+This tool is meant to help with exactly that: local verification, IOC discovery, and repeatable cleanup of known artifacts.
+
 ---
 
 ## What the tool does
