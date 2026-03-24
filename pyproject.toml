@@ -1,0 +1,22 @@
+[project]
+name = "litellm-supply-chain-guard"
+version = "0.1.0"
+description = "Scan repositories and Python environments for compromised LiteLLM releases and clean up known indicators."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "OpenAI Assistant" }
+]
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+litellm-guard = "litellm_supply_chain_guard.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9.28,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "litellm_supply_chain_guard"
+module-root = "src"

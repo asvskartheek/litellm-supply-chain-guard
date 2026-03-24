@@ -1,0 +1,28 @@
+{
+  "package_name": "litellm",
+  "compromised_versions": ["1.82.7", "1.82.8"],
+  "ioc_files": ["litellm_init.pth"],
+  "persistence_paths": [
+    "~/.config/sysmon/sysmon.py",
+    "~/.config/systemd/user/sysmon.service"
+  ],
+  "cache_roots": [
+    "~/.cache/uv",
+    "~/.cache/pip",
+    "~/Library/Caches/pip"
+  ],
+  "repo_dependency_files": [
+    "uv.lock",
+    "requirements.txt",
+    "requirements-dev.txt",
+    "constraints.txt",
+    "pyproject.toml",
+    "Pipfile",
+    "poetry.lock",
+    "setup.py",
+    "setup.cfg",
+    "environment.yml",
+    "environment.yaml"
+  ],
+  "venv_dir_names": [".venv", "venv", "env"]
+}
